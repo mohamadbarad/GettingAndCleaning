@@ -19,6 +19,7 @@ graphics.off()
 
 # Loading packages
 library(dplyr)
+library(stringr)
 
 # Reading data
 getwd()
@@ -65,7 +66,6 @@ rm(train_x,test_x,train_y,test_y,test_sub,train_sub,test_com,train_com)
 # loding the explanatory data set for the variables 
 varExp <- read.table("data/features.txt",header = FALSE)
 
-library(stringr)
 # defining the measurement variables of interest
 meas1 <- "mean()"
 meas2 <- "std()"
